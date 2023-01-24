@@ -20,6 +20,7 @@
     padding: 50px 20px; 
     background-color: #fff;
     border-radius: 5px;
+  
   }
   .btn {
     padding: 10px 20px; 
@@ -28,8 +29,8 @@
     border-radius: 3px;
     outline: none;
     border: none;
-    color: #fff;
-    background-color: blue; 
+    color: #fff; 
+    background-color: #000000;
   }
   h1 {
     font-size: 1.1rem;
@@ -39,10 +40,6 @@
 
   .btn:hover {
     cursor: pointer;
-  }
-
-  .new-joke-btn {
-    background-color: #000000;
   }
   
   .joke-text {

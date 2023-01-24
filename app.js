@@ -3,8 +3,9 @@ const newJokeBtn = document.querySelector('.new-joke-btn');
 newJokeBtn.addEventListener('click', getJoke);
 getJoke();
 
-async function getJoke() {
-   const jokeData = await fetch('https://icanhazdadjoke.com/', {
+
+function getJoke() {
+   const jokeData = fetch('https://icanhazdadjoke.com/', {
         headers: {
             'Accept': 'application/json'
         }
@@ -13,5 +14,19 @@ async function getJoke() {
     }).then(function(data) {
         const joke = data.joke;
         jokeText.innerText = joke;
+        console.log(jokeData)
     });
 }
+
+// function getJokes() {
+//     const jokeDatas = fetch('https://api.chucknorris.io/jokes/random')
+//     // .then(function(response) {
+//     //    return response.json()})
+//     // .then(function(data) {
+//     //     const joke = data.joke;
+//     //     jokeText.innerText = joke;
+//     // });
+//     console.log(jokeDatas);
+// }
+    // https://icanhazdadjoke.com/
+    // https://api.chucknorris.io/jokes/random
