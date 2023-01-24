@@ -14,10 +14,8 @@ function getJoke() {
     }).then(function(data) {
         const joke = data.joke;
         jokeText.innerText = joke;
-        console.log(jokeData)
     });
 }
-
 // function getJokes() {
 //     const jokeDatas = fetch('https://api.chucknorris.io/jokes/random')
 //     // .then(function(response) {
@@ -28,5 +26,3 @@ function getJoke() {
 //     // });
 //     console.log(jokeDatas);
 // }
-    // https://icanhazdadjoke.com/
-    // https://api.chucknorris.io/jokes/random
